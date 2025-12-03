@@ -1,0 +1,35 @@
+#include <iostream>
+#include<set>
+#include<vector>
+#include<algorithm>
+#include<map>
+using namespace std;
+solve_text_case(){
+    //read the size of the array
+    int arraysize;
+    cout<<" Enter arraysize "<<endl;
+    cin>>arraysize;
+    //create hashmap to count frequencies immediatly while reading input
+    map<int, int>numberfrequencies;
+    for<int i=0; i < arraysize; i++>{
+        int currentInputNumber;
+        cin currentInputNumber;
+        numberfrequencies[currentInputNumber]++;        
+}
+ 
+ //identify all unique frenqucies(our candidates for the balance style)
+ //we use set to automatically remove duplicatea
+  set<int> distinctFrequencies;
+  for(auto constant& [number, frequency] : numberFrequencies){
+      distinctFrequencies.insert(frequency);
+  }
+  //initialize minimumdeletion to worst case scenerio(deleting everything)
+  int minimumdeletion= arraysize;
+  //test every distinct frequencies as a potential target frequencies
+  for(int targetfrequency : distinctFrequencies){
+      int deletionNeededForCurrentTarget=0;
+      //check how many deletion are needed in our map
+      for(auto const&[number, actualFrequency]: numberfrequencies){
+          if(actualFrequency > targetFrequency)
+int main() {
+    int t=
