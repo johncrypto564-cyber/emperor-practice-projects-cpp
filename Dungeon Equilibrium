@@ -32,4 +32,12 @@ solve_text_case(){
       for(auto const&[number, actualFrequency]: numberfrequencies){
           if(actualFrequency > targetFrequency)
 int main() {
-    int t=
+    int totaltestcase;
+    cout<<"Enter totaltestcase"<<endl;
+    cin>>totaltestcase;
+    //loop through each test case
+    while(totaltestcase > 0){
+        solve_text_case();
+        totaltestcase--;
+    }
+    return 0;
